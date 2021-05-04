@@ -779,12 +779,17 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .slider {
-    background: url("../images/slider-bg2.jpg") no-repeat;
+    background: url("../images/slider-bg3.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 10% 0%;
     padding: 200px 0 280px 0;
     position: relative;
+}
+
+.slider img {
+    width: 20%;
+    border-radius: 8px;
 }
 
 .slider .block {
