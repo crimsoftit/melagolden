@@ -696,7 +696,7 @@ header .navbar {
 }
 
 header .navbar-brand {
-    padding-top: 5px;
+    padding-top: -10px !important;
 }
 
 header .navbar-default {
@@ -742,7 +742,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .navigation .navbar .navbar-nav>li>a {
-    color: #5C5C5C;
+    color: #D19705;
     padding: 10px 15px;
     font-weight: 500;
     font-size: 14px;
@@ -751,7 +751,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .navigation .navbar .navbar-nav>li>a:hover,
 .navigation .navbar .navbar-nav>li>a:focus {
-    color: #000;
+    color: #5C5C5C !important;
     background: transparent;
 }
 
@@ -769,7 +769,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .navigation .navbar .dropdown-menu a:hover {
-    background: #655E7A;
+    background: #D19705;
     color: #fff;
     padding-left: 25px;
 }
@@ -778,18 +778,19 @@ font header .navbar-default .navbar-nav li a:hover {
     background: transparent;
 }
 
+ion-icon {
+    font-size: 60px !important;
+    color: #655E7A !important;
+    padding: 12px !important;
+}
+
 .slider {
-    background: url("../images/slider-bg3.jpg") no-repeat;
+    background: url("../images/slider-bg.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 10% 0%;
     padding: 200px 0 280px 0;
     position: relative;
-}
-
-.slider img {
-    width: 20%;
-    border-radius: 8px;
 }
 
 .slider .block {
