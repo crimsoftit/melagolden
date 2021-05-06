@@ -2521,6 +2521,10 @@ hr.underlines {
         width: 50%;
         margin-bottom: 10px;
     }
+    .contact_bg {
+        background: url("../images/company/contact3.jpg");
+        background-size: auto !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2541,6 +2545,10 @@ hr.underlines {
     .coming-soon .block .count-down .syotimer-cell .syotimer-cell__value {
         font-size: 50px;
     }
+    .contact_bg {
+        background: url("../images/company/contact3.jpg");
+        background-size: auto !important;
+    }
 }
 
 .coming-soon .block .count-down .syotimer-cell .syotimer-cell__unit {
@@ -2557,11 +2565,19 @@ hr.underlines {
     .coming-soon .block .count-down ul li {
         font-size: 50px;
     }
+    .contact_bg {
+        background: url("../images/company/contact3.jpg");
+        background-size: auto !important;
+    }
 }
 
 @media (max-width: 400px) {
     .coming-soon .block .count-down ul li {
         font-size: 40px;
+    }
+    .contact_bg {
+        background: url("../images/company/contact3.jpg");
+        background-size: auto !important;
     }
 }
 
