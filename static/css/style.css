@@ -2268,6 +2268,13 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.faq_bg {
+    background: url("../images/company/faq.jpg");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .form-group-btn {
     margin-top: 10px;
 }

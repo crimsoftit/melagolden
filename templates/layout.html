@@ -69,18 +69,22 @@
 									<ul class="dropdown-menu">
 										<li><a href="{{ url_for('company_profile') }}">Company Profile</a></li>
 										<li><a href="coming-soon.html">How it works</a></li>
-										<li><a href="404.html">FAQs</a></li>
+										<li><a href="{{ url_for('team') }}">Our Team</a></li>
+										<li><a href="{{ url_for('faq') }}">FAQs</a></li>
 									</ul>
 								</li>
 
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="ion-ios-arrow-down"></span></a>
 									<ul class="dropdown-menu">
-										<li><a href="about.html">About Us</a></li>
-										<li><a href="coming-soon.html">Coming Soon</a></li>
-										<li><a href="404.html">404 Page</a></li>
-										<li><a href="faq.html">FAQ</a></li>
-										<li><a href="pricing.html">Pricing Table</a></li>
+										<li><a href="about.html">Quickbooks Accounting Services</a></li>
+										<li><a href="coming-soon.html">Quickbooks Bookkeeping Services</a></li>
+										<li><a href="404.html">Online Payroll Services</a></li>
+										<li><a href="faq.html">Accounts Payable Services</a></li>
+										<li><a href="pricing.html">Accounts Receivable Services</a></li>
+										<li><a href="404.html">Tax Preparation Services</a></li>
+										<li><a href="faq.html">Cashflow Management Services</a></li>
+										<li><a href="pricing.html">Financial Accounting Advisory Services</a></li>
 									</ul>
 								</li>
 
@@ -90,8 +94,12 @@
 										<li><a href="about.html">Real Estate</a></li>
 										<li><a href="coming-soon.html">Retail Store</a></li>
 										<li><a href="404.html">Travel Agency</a></li>
-										
-										<li><a href="pricing.html">Pricing Table</a></li>
+										<li><a href="pricing.html">CPA</a></li>
+										<li><a href="pricing.html">Fashion</a></li>
+										<li><a href="coming-soon.html">Startups</a></li>
+										<li><a href="404.html">Restaurant</a></li>
+										<li><a href="pricing.html">Manufacturing</a></li>
+										<li><a href="pricing.html">Amazon Sellers</a></li>
 									</ul>
 								</li>
 
@@ -117,10 +125,10 @@
 			<div class="col-md-12">
 				<div class="footer-manu">
 					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact us</a></li>
+						<li><a href="{{ url_for('company_profile') }}">About Us</a></li>
+						<li><a href="{{ url_for('contact') }}">Contact us</a></li>
 						<li><a href="#">How it works</a></li>
-						<li><a href="#">Support</a></li>
+						<li><a href="{{ url_for('faq') }}">FAQs</a></li>
 						<li><a href="#">Terms</a></li>
 					</ul>
 				</div>
