@@ -9,6 +9,37 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid #D19705;
+    border-left: 16px solid pink;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 h1,
 h2,
 h3,
@@ -520,7 +551,7 @@ input[type="tel"]:focus {
 }
 
 .tabCommon .nav-tabs li.active a {
-    background-color: #655E7A;
+    background-color: #D19705;
     border: 1px solid #655E7A;
     color: #ffffff;
 }
