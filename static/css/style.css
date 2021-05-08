@@ -2282,6 +2282,13 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.how_it_works_bg {
+    background: url("../images/company/how-it-works.jpg");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 img.team_img {
     margin: auto;
     margin-top: 10px !important;

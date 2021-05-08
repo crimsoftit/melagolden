@@ -24,6 +24,10 @@ def team():
 def contact():
     return render_template('contact.html')
 
+@app.route('/about/how_it_works', methods=['GET'])
+def how_it_works():
+    return render_template('how_it_works.html')
+
 
 if __name__ == '__main__':
     app.run()
