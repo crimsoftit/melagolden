@@ -9,37 +9,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid #D19705;
-    border-left: 16px solid pink;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 5s linear infinite;
-    animation: spin 5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 h1,
 h2,
 h3,
@@ -2306,6 +2275,39 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.team_bg {
+    background: url("../images/company/team2.png");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+img.team_img {
+    margin: auto;
+    margin-top: 10px !important;
+    border-radius: 3px;
+    max-height: 350px;
+}
+
+.team_title {
+    margin-left: 10px;
+}
+
+div.spacer {
+    font-size: 0;
+    height: 10px;
+    line-height: 0;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(sansation_light.woff);
+}
+
+.post-title {
+    font-family: 'Century Gothic';
+}
+
 .form-group-btn {
     margin-top: 10px;
 }
@@ -2444,6 +2446,7 @@ hr.underlines {
 
 .post .post-content {
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 .post .post-content p {
