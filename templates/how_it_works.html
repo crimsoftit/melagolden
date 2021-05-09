@@ -89,7 +89,7 @@
             </ul>
 
             <p>
-                <img class="how_it_works_img" src="{{ url_for('static', filename='images/company/procedure.png') }}">
+                <img class="img-responsive how_it_works_img" src="{{ url_for('static', filename='images/company/procedure.png') }}">
             </p>
         </div>
 
@@ -101,7 +101,7 @@
             <br/><br/>
             <div class="grid-container">
                 <div class="item1">
-                    <img class="steps_img" src="{{ url_for('static', filename='images/steps/step1.png') }}">
+                    <img class="img-responsive steps_img" src="{{ url_for('static', filename='images/steps/step1.png') }}">
                 </div>
                 <div class="item2">
                     <p>
@@ -142,7 +142,7 @@
                 </div>
 
                 <div class="item4">
-                    <img class="steps_img" src="{{ url_for('static', filename='images/steps/step2.png') }}">
+                    <img class="img-responsive steps_img" src="{{ url_for('static', filename='images/steps/step2.png') }}">
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center">Here is some FAQ , for more please visit our <a href="contact.html">Contact Page</a></h2>
+                <h2 class="text-center">Here is some FAQ , for more please visit our <a href="{{ url_for('contact') }}">Contact Page</a></h2>
             </div>
         </div>
         <div class="row mt-30">
