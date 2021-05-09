@@ -1316,6 +1316,12 @@ hr.underlines {
     box-shadow: 0 8px 15px 0 rgba(5, 57, 106, 0.06);
 }
 
+.pricing-item {
+    padding: 40px 20px;
+    background: #fff;
+    box-shadow: 0 8px 15px 0 rgba(5, 57, 106, 0.06);
+}
+
 .pricing-table .pricing-item a.btn-main,
 .pricing-table .pricing-item a.btn-transparent,
 .pricing-table .pricing-item a.btn-small {
@@ -2313,6 +2319,37 @@ div.spacer {
 
 .post-title {
     font-family: 'Century Gothic';
+}
+
+.issues_block {
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    margin-top: -30px;
+    align-items: center;
+}
+
+.issues_title {
+    color: gray;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.issues_list {
+    list-style-type: circle;
+    padding-left: 30px;
+}
+
+.issues_list>li {
+    padding: 5px;
+}
+
+.steps_title {
+    color: gray;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Candara';
 }
 
 .form-group-btn {

@@ -1,25 +1,60 @@
 {% extends "layout.html" %} {% block content %}
 
+
 <style>
-    .issues_block {
-        padding: 10px;
-        background-color: #ffffff;
-        margin-bottom: 20px;
-        border-radius: 3px;
-        margin-top: -30px;
+    .item1 {
+        grid-area: menu;
+        align-items: center !important;
     }
     
-    .issues_title {
-        color: gray;
+    .item2 {
+        grid-area: footer;
+        text-align: left !important;
+        font-size: 16px !important;
     }
     
-    .issues_list {
-        list-style-type: circle;
-        padding-left: 30px;
+    .item3 {
+        grid-area: menu;
+        align-items: center !important;
+        text-align: left !important;
     }
     
-    .issues_list>li {
-        padding: 5px;
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'menu footer footer footer footer footer';
+        grid-template-columns: 30% auto;
+        grid-gap: 10px;
+    }
+    
+    .grid-container>div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    
+    .grid-container1 {
+        margin-top: 20px;
+        display: grid;
+        grid-template-areas: 'menu footer footer footer footer footer';
+        grid-template-columns: 70% 30%;
+        grid-gap: 10px;
+    }
+    
+    .grid-container1>div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    
+    .steps_img {
+        width: fit-content;
+        align: center;
+    }
+    
+    hr.step_underlines {
+        width: 4%;
+        float: left;
+        border-top: 3px double #8c8b8b;
     }
 </style>
 
@@ -42,8 +77,9 @@
 
         <div class="issues_block">
             <p>
-                <h2 class="issues_title" style="font-size: 24px; font-weight: bold;">Some of the most persistent worries for clients while outsourcing their financial services include:</h2>
+                <h2 class="issues_title">Some of the most persistent worries for clients while outsourcing their financial services include:</h2>
             </p>
+
             <ul class="issues_list">
                 <li>Whether they have the right structure, resources, experience, ethics, and expertise to provide improved results?</li>
                 <li>What is the work methodology tailed by the outsourcing company, and if they can expect better outcomes or not?</li>
@@ -51,103 +87,64 @@
                     competitive rates.
                 </li>
             </ul>
+
+            <p>
+                <img class="how_it_works_img" src="{{ url_for('static', filename='images/company/procedure.png') }}">
+            </p>
         </div>
 
-        <div class="row">
-            <!-- single pricing table -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="pricing-item text-center">
-
-                    <!-- plan name & value -->
-                    <div class="price-title">
-                        <h3>Basic</h3>
-                        <strong class="value">$99</strong>
-                        <p>Perfect for single freelancers who work by themselves</p>
-                    </div>
-                    <!-- /plan name & value -->
-
-                    <!-- plan description -->
-                    <ul>
-                        <li><i class="ion-ios-circle-outline"></i> Unlimited agents</li>
-                        <li><i class="ion-ios-circle-outline"></i> 10 PSD Design</li>
-                        <li><i class="ion-ios-circle-outline"></i> HTML5 Markup</li>
-                        <li><i class="ion-ios-circle-outline"></i> Basic SEO</li>
-                        <li><i class="ion-ios-circle-outline"></i> Email Marketing</li>
-                        <li><i class="ion-ios-circle-outline"></i> 24/7 Tech Support</li>
-                    </ul>
-                    <!-- /plan description -->
-
-                    <!-- Contact Us button -->
-                    <a class="btn btn-small" href="{{ url_for('contact') }}">Contact Us</a>
-                    <!-- /Contact Us button -->
-
+        <div class="row" style="width: 99.9%; margin: auto;">
+            <div class="steps_div">
+                <h2 class="steps_title" style="font-size: 20px;">Stage #1:</h2>
+                <hr class="step_underlines">
+            </div>
+            <br/><br/>
+            <div class="grid-container">
+                <div class="item1">
+                    <img class="steps_img" src="{{ url_for('static', filename='images/steps/step1.png') }}">
+                </div>
+                <div class="item2">
+                    <p>
+                        <strong>Fill out the inquiry form:</strong> We have an easy to fill the form to allow us to get your details for faster and more easier communication. These include your name, business name (for businesses), contact details, nature
+                        of the services you would outsource.
+                    </p>
+                    <p>
+                        <strong>The client relations team calls or emails you:</strong>We have a team working around the clock, and we guarantee the fastest response after you contact us. Our representatives are highly experienced accountants and are
+                        keen to listen to the client to understand their needs and provide the best solutions.
+                    </p>
                 </div>
             </div>
-            <!-- end single pricing table -->
 
-            <!-- single pricing table -->
-            <div class="col-md-4 col-sm-6 col-xs-12  ">
-                <div class="pricing-item text-center">
-
-                    <!-- plan name & value -->
-                    <div class="price-title">
-                        <h3>Premium</h3>
-                        <strong class="value">$199</strong>
-                        <p>Suitable for small businesses with up to 5 employees</p>
-                    </div>
-                    <!-- /plan name & value -->
-
-                    <!-- plan description -->
-                    <ul>
-                        <li><i class="ion-ios-circle-outline"></i> Unlimited agents</li>
-                        <li><i class="ion-ios-circle-outline"></i> 20 PSD Design</li>
-                        <li><i class="ion-ios-circle-outline"></i> HTML5/CSS3 Markup</li>
-                        <li><i class="ion-ios-circle-outline"></i> Advance SEO</li>
-                        <li><i class="ion-ios-circle-outline"></i> Email Marketing</li>
-                        <li><i class="ion-ios-circle-outline"></i> 24/7 Tech Support</li>
-                    </ul>
-                    <!-- /plan description -->
-
-                    <!-- Contact Us button -->
-                    <a class="btn btn-small" href="{{ url_for('contact') }}">Contact Us</a>
-                    <!-- /Contact Us button -->
+            <div class="steps_div">
+                <h2 class="steps_title" style="font-size: 20px;">Stage #2:</h2>
+                <hr class="step_underlines">
+            </div>
+            <br/>
+            <div class="grid-container1">
+                <div class="item3">
+                    <p>
+                        <strong>Understanding of requirements:</strong> We work diligently to understand your business and your business needs before suggesting a working plan. Our goal is to deliver custom accounting and bookkeeping solutions that suit
+                        your business, and this is only possible if we listen to you.
+                    </p>
+                    <p>
+                        <strong>Ballpark estimate (if possible):</strong> In most cases, our client’s representative will provide a rough estimate or approximation based on the services you need. We endeavor to provide a view that falls within the actual
+                        range to help our clients start planning early.
+                    </p>
+                    <p>
+                        <strong>Proposal (if required):</strong> Our team prepares and presents a comprehensive proposal for the project based on the client’s request. We include all details about the outsourced services, the costs, timeline, and everything
+                        else the client needs.
+                    </p>
+                    <p>
+                        <strong>Approval to go ahead:</strong> After submitting the proposal, our team will discuss it with the client, and if approved, it is all system go. We set out the rules of engagement from the beginning to facilitate better collaboration
+                        between our team and your business.
+                    </p>
 
                 </div>
-            </div>
-            <!-- end single pricing table -->
 
-            <!-- single pricing table -->
-            <div class="col-md-4 col-sm-6 col-xs-12 ">
-                <div class="pricing-item text-center">
-
-                    <!-- plan name & value -->
-                    <div class="price-title">
-                        <h3>Advance</h3>
-                        <strong class="value">$299</strong>
-                        <p>Great for large businesses with more than 5 employees</p>
-                    </div>
-                    <!-- /plan name & value -->
-
-                    <!-- plan description -->
-                    <ul>
-                        <li><i class="ion-ios-circle-outline"></i> Unlimited agents</li>
-                        <li><i class="ion-ios-circle-outline"></i> 100 PSD Design</li>
-                        <li><i class="ion-ios-circle-outline"></i> HTML5 Markup</li>
-                        <li><i class="ion-ios-circle-outline"></i> Pro SEO</li>
-                        <li><i class="ion-ios-circle-outline"></i> Email Marketing</li>
-                        <li><i class="ion-ios-circle-outline"></i> 24/7 Tech Support</li>
-                    </ul>
-                    <!-- /plan description -->
-
-                    <!-- Contact Us button -->
-                    <a class="btn btn-small" href="{{ url_for('contact') }}">Contact Us</a>
-                    <!-- /Contact Us button -->
-
+                <div class="item4">
+                    <img class="steps_img" src="{{ url_for('static', filename='images/steps/step2.png') }}">
                 </div>
             </div>
-            <!-- end single pricing table -->
-
-
         </div>
         <!-- End row -->
     </div>
