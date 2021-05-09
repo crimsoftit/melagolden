@@ -3,6 +3,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600);
 @import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
+@font-face {
+    font-family: 'Candara';
+    src: url(sansation_light.woff);
+}
+
+.post-title {
+    font-family: 'Candara';
+}
+
 body {
     line-height: 1.5;
     font-family: "Roboto", sans-serif;
@@ -306,6 +315,61 @@ input[type="tel"]:focus {
 .buttons:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.item1 {
+    grid-area: menu;
+    align-items: center !important;
+}
+
+.item2 {
+    grid-area: footer;
+    text-align: left !important;
+    font-size: 16px !important;
+}
+
+.item3 {
+    grid-area: menu;
+    align-items: center !important;
+    text-align: left !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'menu footer footer footer footer footer';
+    grid-template-columns: 30% auto;
+    grid-gap: 10px;
+}
+
+.grid-container>div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-container1 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 'menu footer footer footer footer footer';
+    grid-template-columns: 70% 30%;
+    grid-gap: 10px;
+}
+
+.grid-container1>div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.steps_img {
+    width: fit-content;
+    align: center;
+}
+
+hr.step_underlines {
+    width: 4%;
+    float: left;
+    border-top: 3px double #8c8b8b;
 }
 
 .section {
@@ -2288,6 +2352,17 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.quickbooks_bg {
+    background: url("../images/services/quickbooks.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Candara !important';
+}
+
+.quickbooks_bg>p {
+    font-family: 'Candara !important';
+}
+
 .how_it_works_bg {
     background: url("../images/company/how-it-works.jpg");
     background-size: cover !important;
@@ -2310,15 +2385,6 @@ div.spacer {
     font-size: 0;
     height: 10px;
     line-height: 0;
-}
-
-@font-face {
-    font-family: 'Century Gothic';
-    src: url(sansation_light.woff);
-}
-
-.post-title {
-    font-family: 'Century Gothic';
 }
 
 .issues_block {
@@ -2350,6 +2416,34 @@ div.spacer {
     font-size: 34px;
     font-weight: bold;
     font-family: 'Candara';
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container>div {
+    width: 48%;
+    text-align: left;
+    line-height: 25px;
+    font-size: 30px;
+}
+
+.flex-container>div>p {
+    margin-left: 10px;
+}
+
+.qb_services_list {
+    list-style-type: circle;
+    padding-left: 30px;
+    font-family: "Candara";
+    font-size: 14px;
+}
+
+.qb_services_list>li {
+    padding: 5px;
+    color: gray;
 }
 
 .form-group-btn {
@@ -2554,11 +2648,23 @@ div.spacer {
     .coming-soon {
         padding: 50px 0;
     }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .coming-soon {
         padding: 50px 0;
+    }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
     }
 }
 
@@ -2574,6 +2680,12 @@ div.spacer {
     .coming-soon .block h1 {
         font-size: 40px;
         line-height: 50px;
+    }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
     }
 }
 
@@ -2610,11 +2722,23 @@ div.spacer {
         background: url("../images/company/contact3.jpg");
         background-size: auto !important;
     }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .coming-soon .block .count-down .syotimer-cell {
         width: 50%;
+    }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
     }
 }
 
@@ -2663,6 +2787,12 @@ div.spacer {
     .contact_bg {
         background: url("../images/company/contact3.jpg");
         background-size: auto !important;
+    }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
     }
 }
 
@@ -2914,6 +3044,12 @@ div.spacer {
         font-size: 130px;
         line-height: 150px;
     }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -2921,12 +3057,24 @@ div.spacer {
         font-size: 100px;
         line-height: 100px;
     }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     .page-404 h1 {
         font-size: 150px;
         line-height: 200px;
+    }
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
     }
 }
 

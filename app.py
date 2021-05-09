@@ -20,13 +20,17 @@ def faq():
 def team():
     return render_template('team.html')
 
-@app.route('/contact', methods=['GET'])
-def contact():
-    return render_template('contact.html')
-
 @app.route('/about/how_it_works', methods=['GET'])
 def how_it_works():
     return render_template('how_it_works.html')
+
+@app.route("/services/quickbooks_accounting_services", methods=['GET'])
+def quickbooks_accounting_services():
+    return render_template('quickbooks_as.html')
+
+@app.route('/contact', methods=['GET'])
+def contact():
+    return render_template('contact.html')
 
 
 if __name__ == '__main__':
