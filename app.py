@@ -28,6 +28,10 @@ def how_it_works():
 def quickbooks_accounting_services():
     return render_template('quickbooks_as.html')
 
+@app.route("/services/quickbooks_bookkeeping_services", methods=['GET'])
+def quickbooks_bookkeeping_services():
+    return render_template('quickbooks_bs.html')
+
 @app.route('/contact', methods=['GET'])
 def contact():
     return render_template('contact.html')
