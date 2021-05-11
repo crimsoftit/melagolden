@@ -14,7 +14,7 @@
 
 body {
     line-height: 1.5;
-    font-family: "Roboto", sans-serif;
+    font-family: "Candara", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Candara", sans-serif;
 }
 
 h1,
@@ -55,7 +55,7 @@ h4 {
 p {
     color: #7B7B7B;
     font-size: 15px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Candara", sans-serif;
 }
 
 ol,
@@ -1208,7 +1208,7 @@ ion-icon {
 }
 
 .testimonial .testimonial-carousel .user p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Candara", sans-serif;
     padding-bottom: 0;
     margin-top: 6px;
     font-size: 12px;
@@ -1997,12 +1997,18 @@ hr.underlines {
         width: 49%;
         margin: 3px;
     }
+    .nav_logo {
+        margin-top: -20px !important;
+    }
 }
 
 @media (max-width: 480px) {
     .instagram-feed a {
         width: 100%;
         margin: 3px;
+    }
+    .nav_logo {
+        margin-top: -20px !important;
     }
 }
 
@@ -2035,6 +2041,9 @@ hr.underlines {
     .dashboard-menu li a {
         padding: 10px 15px;
     }
+    .nav_logo {
+        margin-top: -20px !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2047,6 +2056,9 @@ hr.underlines {
     .dashboard-menu li a {
         padding: 10px 5px;
         font-size: 12px;
+    }
+    .nav_logo {
+        margin-top: -20px !important;
     }
 }
 
@@ -2666,6 +2678,9 @@ div.spacer {
     .flex-container>div {
         width: 100%;
     }
+    .nav_logo {
+        margin-top: -20px !important;
+    }
 }
 
 .coming-soon .block h1 {
@@ -2686,6 +2701,9 @@ div.spacer {
     }
     .flex-container>div {
         width: 100%;
+    }
+    .nav_logo {
+        margin-top: -20px !important;
     }
 }
 
@@ -2780,6 +2798,9 @@ div.spacer {
 @media (max-width: 768px) {
     .coming-soon .block .count-down ul li {
         font-size: 50px;
+    }
+    .nav_logo {
+        margin-top: -20px !important;
     }
 }
 
@@ -3079,6 +3100,9 @@ div.spacer {
     .flex-container>div {
         width: 100%;
     }
+    .nav_logo {
+        margin-top: -20px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -3091,6 +3115,9 @@ div.spacer {
     }
     .flex-container>div {
         width: 100%;
+    }
+    .nav_logo {
+        margin-top: -20px !important;
     }
 }
 
