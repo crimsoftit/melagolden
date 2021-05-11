@@ -18,10 +18,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.nav_logo {
-    margin-top: -23px;
-}
-
 h1,
 h2,
 h3,
@@ -546,9 +542,6 @@ hr.step_underlines {
         -webkit-transform: none;
         transform: none;
     }
-    .nav_logo {
-        margin-top: -43px;
-    }
 }
 
 .commonSelect {
@@ -691,17 +684,11 @@ hr.step_underlines {
     .buttonPart li {
         margin-bottom: 8px;
     }
-    .nav_logo {
-        margin-top: -43px;
-    }
 }
 
 @media (max-width: 768px) {
     .buttonPart li {
         margin-bottom: 8px;
-    }
-    .nav_logo {
-        margin-top: -43px;
     }
 }
 
@@ -1578,17 +1565,11 @@ hr.underlines {
     .product-modal .modal-dialog {
         width: 100%;
     }
-    .nav_logo {
-        margin-top: -43px !important;
-    }
 }
 
 @media (max-width: 768px) {
     .product-modal .modal-dialog {
         width: 100%;
-    }
-    .nav_logo {
-        margin-top: -43px !important;
     }
 }
 
@@ -1621,17 +1602,11 @@ hr.underlines {
     .product-modal .modal-content .modal-body .product-short-details h2 {
         margin-top: 15px;
     }
-    .nav_logo {
-        margin-top: -43px !important;
-    }
 }
 
 @media (max-width: 768px) {
     .product-modal .modal-content .modal-body .product-short-details h2 {
         margin-top: 15px;
-    }
-    .nav_logo {
-        margin-top: -43px !important;
     }
 }
 
@@ -2691,9 +2666,6 @@ div.spacer {
     .flex-container>div {
         width: 100%;
     }
-    .nav_logo {
-        margin-top: -43px !important;
-    }
 }
 
 .coming-soon .block h1 {
@@ -2758,6 +2730,16 @@ div.spacer {
     }
 }
 
+.nav_logo {
+    margin-top: -23px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_logo {
+        margin-top: -20px !important;
+    }
+}
+
 @media (max-width: 480px) {
     .coming-soon .block .count-down .syotimer-cell {
         width: 50%;
@@ -2767,6 +2749,9 @@ div.spacer {
     }
     .flex-container>div {
         width: 100%;
+    }
+    .nav_logo {
+        margin-top: -20px !important;
     }
 }
 
@@ -2821,6 +2806,9 @@ div.spacer {
     }
     .flex-container>div {
         width: 100%;
+    }
+    .nav_logo {
+        margin-top: -20px !important;
     }
 }
 
