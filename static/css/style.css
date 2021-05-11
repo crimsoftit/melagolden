@@ -2364,19 +2364,37 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.bookkeeping_bg {
+    background: url("../images/services/bookkeeping.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .quickbooks_bg {
     background: url("../images/services/quickbooks.jpg");
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Candara !important';
 }
 
 .quickbooks_bg>p {
     font-family: 'Candara !important';
 }
 
+.payroll_bg {
+    background: url("../images/services/payroll.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .how_it_works_bg {
     background: url("../images/company/how-it-works.jpg");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.cpa_bg {
+    background: url("../images/industries/cpa.jpg");
     background-size: cover !important;
     background-attachment: fixed;
     background-repeat: no-repeat;

@@ -32,6 +32,20 @@ def quickbooks_accounting_services():
 def quickbooks_bookkeeping_services():
     return render_template('quickbooks_bs.html')
 
+@app.route("/services/accounts_receivable_services", methods=['GET'])
+def accounts_receivable_services():
+    return render_template('accounts_receivable_ms.html')
+
+
+
+@app.route("/services/payroll_services", methods=['GET'])
+def payroll_services():
+    return render_template('payroll_services.html')
+
+@app.route("/industries/cpa", methods=['GET'])
+def cpa():
+    return render_template('cpa.html')
+
 @app.route('/contact', methods=['GET'])
 def contact():
     return render_template('contact.html')
