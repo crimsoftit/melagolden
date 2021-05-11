@@ -2,7 +2,7 @@ from flask import Flask, redirect, render_template, url_for
 import os
 
 app = Flask(__name__)
-app.config.from_object('config.DevelopmentConfig')
+
 
 @app.route('/')
 def index():
