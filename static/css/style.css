@@ -2476,6 +2476,16 @@ div.spacer {
     color: gray;
 }
 
+.list_links {
+    color: #825EFC;
+}
+
+.list_links:hover {
+    color: #D19705;
+    text-decoration: underline;
+    font-style: italic;
+}
+
 .form-group-btn {
     margin-top: 10px;
 }
