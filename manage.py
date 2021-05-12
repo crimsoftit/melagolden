@@ -2,7 +2,7 @@ from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 import os
 
-from app import app
+from project import app
 
 app.config.from_object('config.DevelopmentConfig')
 
