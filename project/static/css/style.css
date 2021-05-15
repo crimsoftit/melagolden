@@ -2400,6 +2400,13 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.realestate_bg {
+    background: url("../images/industries/real_estate.jpg");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 img.team_img {
     margin: auto;
     margin-top: 10px !important;
@@ -2476,8 +2483,10 @@ div.spacer {
     color: gray;
 }
 
+
 .list_links {
     color: #825EFC;
+    list-style: none !important;
 }
 
 .list_links:hover {
@@ -2485,7 +2494,6 @@ div.spacer {
     text-decoration: underline;
     font-style: italic;
 }
-
 .form-group-btn {
     margin-top: 10px;
 }
