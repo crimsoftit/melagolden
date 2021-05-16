@@ -41,9 +41,9 @@
     <header class="navigation">
         <div class="container">
             <div class="row">
-                <div class="col-md-12" style="padding-top: 30px;">
+                <div class="col-md-12" style="padding-top: 15px;">
                     <!-- header Nav Start -->
-                    <nav class="navbar navbar-fixed-top" >
+                    <nav class="navbar navbar-fixed-top" style="background-color: beige !important; ">
                         <div class="container-fluid">
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
@@ -55,7 +55,7 @@
                                 </button>
 
                                 <a class="navbar-brand" href="{{ url_for('home.index') }}">
-                                    <img class="responsive" src="{{ url_for('static', filename='images/mg_logo.png') }}" alt="Logo" width="150" height="50">
+                                    <img class="responsive" src="{{ url_for('static', filename='images/mg_logo1.png') }}" alt="Logo" width="150" height="50">
                                 </a>
 
                             </div>
@@ -96,7 +96,7 @@
                                             <li><a href="{{ url_for('industries.travel_agency') }}">Travel Agency</a></li>
                                             <li><a href="{{ url_for('industries.cpa') }}">CPA</a></li>
                                             <li><a href="{{ url_for('industries.fashion') }}">Fashion</a></li>
-                                            <li><a href="coming-soon.html">Startups</a></li>
+                                            <li><a href="{{ url_for('industries.startups') }}">Startups</a></li>
                                             <li><a href="404.html">Restaurant</a></li>
                                             <li><a href="pricing.html">Manufacturing</a></li>
                                             <li><a href="pricing.html">Amazon Sellers</a></li>

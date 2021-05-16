@@ -2394,6 +2394,20 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.fashion_bg {
+    background: url("../images/industries/fashion.png");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.startups_bg {
+    background: url("../images/industries/startups.png");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .cpa_bg {
     background: url("../images/industries/cpa.jpg");
     background-size: cover !important;
@@ -2698,7 +2712,15 @@ div.spacer {
 .post-pagination>li:last-child>a {
     border-radius: 0;
 }
+.parent {
+    display: flex;
+    height: 100px;
+}
 
+ 
+.filler {
+    flex-grow: 1;
+}
 .coming-soon {
     background: url("../images/backgrounds/coming-soon.jpg");
     background-repeat: no-repeat;

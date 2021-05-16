@@ -23,3 +23,7 @@ def travel_agency():
 @industries_blueprint.route("/industries/cpa", methods=['GET'])
 def cpa():
     return render_template('cpa.html')
+
+@industries_blueprint.route("/industries/startups", methods=['GET'])
+def startups():
+    return render_template('startups.html')
