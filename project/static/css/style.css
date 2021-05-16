@@ -2408,6 +2408,20 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.restaurants_bg {
+    background: url("../images/industries/restaurant.jpg");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.manufacturing_bg {
+    background: url("../images/industries/manufacturing.jpg");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .cpa_bg {
     background: url("../images/industries/cpa.jpg");
     background-size: cover !important;

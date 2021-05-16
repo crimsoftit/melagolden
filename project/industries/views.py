@@ -27,3 +27,11 @@ def cpa():
 @industries_blueprint.route("/industries/startups", methods=['GET'])
 def startups():
     return render_template('startups.html')
+
+@industries_blueprint.route("/industries/restaurants", methods=['GET'])
+def restaurants():
+    return render_template('restaurants.html')
+
+@industries_blueprint.route("/industries/manufacturing", methods=['GET'])
+def manufacturing():
+    return render_template('manufacturing.html')
