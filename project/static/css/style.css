@@ -809,9 +809,6 @@ header .navbar {
     border: 0px;
 }
 
-header .navbar-brand {
-    padding-top: -30px !important;
-}
 
 header .navbar-default {
     background: none;
@@ -832,6 +829,10 @@ font header .navbar-default .navbar-nav li a:hover {
     color: #000;
 }
 
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
 .navigation {
     background: #fff;
     padding: 20px 0;
