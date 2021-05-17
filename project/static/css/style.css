@@ -363,7 +363,7 @@ input[type="tel"]:focus {
 
 .steps_img {
     width: fit-content;
-    align: center;
+    float: center;
 }
 
 hr.step_underlines {
@@ -2422,6 +2422,13 @@ hr.underlines {
     background-repeat: no-repeat;
 }
 
+.amazon_bg {
+    background: url("../images/industries/amazon.jpg");
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .cpa_bg {
     background: url("../images/industries/cpa.jpg");
     background-size: cover !important;
@@ -2531,6 +2538,17 @@ div.spacer {
     color: gray;
 }
 
+ol.ordered_list {
+    list-style-type: upper-roman;
+    padding-left: 30px;
+    font-family: "Candara";
+    font-size: 14px;
+}
+
+.ordered_list > li {
+    padding: 1px;
+    color: gray;
+}
 
 .list_links {
     color: #825EFC;
@@ -2728,7 +2746,7 @@ div.spacer {
 }
 .parent {
     display: flex;
-    height: 100px;
+    height: 50px;
 }
 
  
