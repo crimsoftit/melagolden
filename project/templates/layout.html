@@ -38,12 +38,12 @@
 
 
     <!-- Header Start -->
-    <header class="navigation">
+    <header class="navigation" >
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="padding-top: 15px; padding-bottom: 15px">
                     <!-- header Nav Start -->
-                    <nav class="navbar navbar-fixed-top" style="background-color: #fff;">
+                    <nav class="navbar navbar-fixed-top" id="nav" style="background-color: #fff;">
                         <div class="container-fluid">
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
@@ -80,7 +80,7 @@
                                             <li><a href="{{ url_for('services.quickbooks_accounting_services') }}">Quickbooks Accounting Services</a></li>
                                             <li><a href="{{ url_for('services.quickbooks_bookkeeping_services') }}">Quickbooks Bookkeeping Services</a></li>
                                             <li><a href="{{ url_for('services.payroll_services') }}">Online Payroll Services</a></li>
-                                            <li><a href="faq.html">Accounts Payable Services</a></li>
+                                            <li><a href="{{ url_for('services.accounts_payable_services') }}">Accounts Payable Services</a></li>
                                             <li><a href="{{ url_for('services.accounts_receivable_services') }}">Accounts Receivable Services</a></li>
                                             <li><a href="404.html">Tax Preparation Services</a></li>
                                             <li><a href="faq.html">Cashflow Management Services</a></li>
@@ -142,6 +142,8 @@
         </div>
     </footer>
 
+
+
     <!-- 
     Essential Scripts
     =====================================-->
@@ -171,7 +173,7 @@
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
-
+    
 
 
 </body>

@@ -8,6 +8,6 @@ home_blueprint = Blueprint('home', __name__, template_folder='templates')
 def index():
     return render_template('index.html')
 
-@home_blueprint.route('/contact', methods=['GET'])
+@home_blueprint.route('/contact/', methods=['GET'])
 def contact():
     return render_template('contact.html')

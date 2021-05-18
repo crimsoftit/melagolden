@@ -2345,8 +2345,8 @@ hr.underlines {
 }
 
 .contact_bg {
-    background: url("../images/company/contact.jpg");
-    background-size: auto !important;
+    background: url("../images/company/contact2.png");
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -2379,6 +2379,24 @@ hr.underlines {
 
 .quickbooks_bg>p {
     font-family: 'Candara !important';
+}
+
+.acr_bg {
+    background: url("../images/services/ac_receivables.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tax_prep_bg {
+    background: url("../images/services/tax.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.acp_bg {
+    background: url("../images/services/ac_payable.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .payroll_bg {
